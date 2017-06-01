@@ -183,7 +183,7 @@
                                     ERP Kolus
                                 </div>
                                 <div class="project-name">
-                                    Tenha um suporte de qualidade para a melhor gerência do seu negócio.
+                                    Tenha um suporte de qualidade para melhor gerênciar seu negócio.
                                 </div>
                             </div>
                         </div>
