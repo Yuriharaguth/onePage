@@ -61,9 +61,9 @@
     <header>
         <div class="header-content">
             <div class="header-content-inner">
-                <h1 id="homeHeading">Kolus</h1>
+                <h1 id="homeHeading">{{$header->nome_site}}</h1>
                 <hr>
-                <h3 style="padding-bottom:30px;">Sem limites entre você e a tecnolgia.</h3>
+                <h3 style="padding-bottom:30px;">{{$header->frase_apresentacao}}</h3>
                 <a href="#contact" class="btn btn-primary btn-xl page-scroll">Entre em contato</a>
             </div>
         </div>
