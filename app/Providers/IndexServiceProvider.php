@@ -11,6 +11,7 @@ class IndexServiceProvider extends ServiceProvider
         view()->composer(['home.welcome'],'App\Http\ViewComposer\IndexComposer');
     }
 
+
     public function register() {
         //
     }

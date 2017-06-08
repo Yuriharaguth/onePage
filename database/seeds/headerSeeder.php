@@ -13,8 +13,7 @@ class headerSeeder extends Seeder
             ['nome_site' => 'Kolus', 'frase_apresentacao' => 'Sem limites entre você e a tecnologia.']
         ];
         
-        foreach($headers as $header)
-        {
+        foreach($headers as $header) {
             App\Header::create($header)->save();
         }
     }

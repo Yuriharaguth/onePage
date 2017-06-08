@@ -13,8 +13,8 @@
 <table class="table">
 	<thead>
 		<tr>
-            <th>Título</th>
-            <th>Frase de apresentação</th>
+            <th>Frase curta</th>
+            <th>Frase longa</th>
             <td>Editar</td>
         </tr>
 	</thead>

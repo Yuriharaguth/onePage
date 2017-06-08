@@ -19,7 +19,7 @@ class headerController extends Controller
     public function edit(Header $header) {
         return view('header.edit', compact('header'));
     }
-
+    
     public function update(Request $request, Header $header) {
         $header->update($request->all());
         $header->save();

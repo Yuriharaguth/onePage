@@ -21,8 +21,10 @@ class ApresentacaoController extends Controller
         return view('apresentacao.edit', compact('ap'));
     }
 
-    public function update(Request $request, $id) {
-        //
+    public function update(Request $request, Apresentacao $ap) {
+        $ap->update($request->all());
+        $ap->save();
+        return redirect()->route('apresentacao.index');
     }
 
 

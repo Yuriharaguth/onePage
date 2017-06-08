@@ -73,10 +73,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Nós temos o que você precisa!</h2>
+                    <h2 class="section-heading">{{$ap->frase_curta}}</h2>
                     <hr class="light">
-                    <p class="text-faded">Somos uma agência digital, especializada em aplicações Web e mobile. Nosso foco é resolver o problema, 
-                        com no menor tempo possível e com a maior qualidade.</p>
+                    <p class="text-faded">{{$ap->frase_longa}}</p>
                     <a href="#services" class="page-scroll btn btn-default btn-xl sr-button">Vamos começar!</a>
                 </div>
             </div>
