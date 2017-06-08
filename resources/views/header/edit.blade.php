@@ -12,7 +12,4 @@
     
 {!! Form::close() !!}
 
-
-<a href="{{ route('header.index') }}">Voltar para a Lista</a>
-
 @endsection

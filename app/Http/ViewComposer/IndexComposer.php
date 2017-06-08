@@ -16,7 +16,6 @@ class IndexComposer {
 	
 	public function compose(View $view) {
 		$view->with('header', $this->header->findOrFail(1));
-
 	}
 	
 }

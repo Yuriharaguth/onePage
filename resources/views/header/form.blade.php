@@ -8,4 +8,4 @@
     {!! Form::text('frase_apresentacao', null, ['class' => 'form-control', 'placeholder' => 'Frase Apresentação']) !!}
 </div>
 
-{!! Form::submit('Enviar', ['class' => 'btn btn-default']) !!}
+{!! Form::submit('Salvar', ['class' => 'btn btn-default']) !!}
