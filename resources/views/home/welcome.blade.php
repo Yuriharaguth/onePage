@@ -93,41 +93,22 @@
         </div>
         <div class="container">
             <div class="row">
+                @foreach($servico as $ser)
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
-                        <i class="fa fa-4x fa-server text-primary sr-icons"></i>
-                        <h3>Hospedagem de sites</h3>
-                        <p class="text-muted">Hospedagem de Sites com segurança, qualidade e suporte.</p>
+                        <i class="{{$ser->servico_icon}}"></i>
+                        <h3>{{$ser->nome_servico}}</h3>
+                        <p class="text-muted">{{$ser->descricao_servico}}</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-facebook text-primary sr-icons"></i>
-                        <h3>Mídia social</h3>
-                        <p class="text-muted">Gerenciamos suas mídias sociais. Para sua marca chegar mais longe.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-envelope-o text-primary sr-icons"></i>
-                        <h3>Email Marketing</h3>
-                        <p class="text-muted">Alcance novos clientes.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-heart text-primary sr-icons"></i>
-                        <h3>Criação de marcas</h3>
-                        <p class="text-muted">Criamos e gerenciamos sua marca.</p>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </section>
-
     <section class="no-padding" id="portfolio">
         <div class="container-fluid">
             <div class="row no-gutter popup-gallery">
+            
                 <div class="col-lg-4 col-sm-6">
                     <a href="img/portfolio/fullsize/1.jpg" class="portfolio-box">
                         <img src="img/portfolio/thumbnails/1.jpg" class="img-responsive" alt="" style="height: 253px; width: 450px;">
@@ -143,6 +124,7 @@
                         </div>
                     </a>
                 </div>
+
                 <div class="col-lg-4 col-sm-6">
                     <a href="img/portfolio/fullsize/2.jpg" class="portfolio-box">
                         <img src="img/portfolio/thumbnails/2.jpg" class="img-responsive" alt="">
