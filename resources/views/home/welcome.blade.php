@@ -216,17 +216,17 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Vamos conversar?</h2>
+                    <h2 class="section-heading">{{$contato->contato_titulo}}</h2>
                     <hr class="primary">
-                    <p>Pronto para começar seu próximo projeto conosco? Isso é ótimo! Dê-nos uma chamada ou envie-nos um e-mail e vamos retornar o mais rapidamente possível!</p>
+                    <p>{{$contato->contato_mensagem}}</p>
                 </div>
                 <div class="col-lg-4 col-lg-offset-2 text-center">
                     <i class="fa fa-phone fa-3x sr-contact"></i>
-                    <p>123-456-6789</p>
+                    <p>{{$contato->contato_tel}}</p>
                 </div>
                 <div class="col-lg-4 text-center">
                     <i class="fa fa-envelope-o fa-3x sr-contact"></i>
-                    <p><a href="mailto:your-email@your-domain.com">koluscontato@gmail.com</a></p>
+                    <p><a href="mailto:your-email@your-domain.com">{{$contato->contato_email}}</a></p>
                 </div>
             </div>
         </div>
