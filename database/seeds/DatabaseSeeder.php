@@ -18,6 +18,7 @@ class DatabaseSeeder extends Seeder
           $this->call(apresentacaoSeeder::class);
           $this->call(ServicoSeeder::class);
           $this->call(ContatoSeeder::class);
+          $this->call(ServicoImgSeed::class);
 
         Model::reguard();
     }

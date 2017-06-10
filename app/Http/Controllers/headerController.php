@@ -17,6 +17,7 @@ class headerController extends Controller
     }
 
     public function edit(Header $header) {
+         
         return view('header.edit', compact('header'));
     }
     

@@ -108,98 +108,25 @@
     <section class="no-padding" id="portfolio">
         <div class="container-fluid">
             <div class="row no-gutter popup-gallery">
-            
+                @foreach($servicoimg as $ser)
                 <div class="col-lg-4 col-sm-6">
-                    <a href="img/portfolio/fullsize/1.jpg" class="portfolio-box">
-                        <img src="img/portfolio/thumbnails/1.jpg" class="img-responsive" alt="" style="height: 253px; width: 450px;">
+                    <a href="{{$ser->servicoimg_foto}}" class="portfolio-box">
+                        <img src="{{$ser->servicoimg_foto}}" class="img-responsive" alt="" style="height: 253px; width: 450px;">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
-                                    Aplicativos
+                                    {{$ser->servicoimg_titulo}}
                                 </div>
                                 <div class="project-name">
-                                    Criação e suporte de aplicativos.
+                                     {{$ser->servicoimg_descricao}}
                                 </div>
                             </div>
                         </div>
                     </a>
                 </div>
+                @endforeach
 
-                <div class="col-lg-4 col-sm-6">
-                    <a href="img/portfolio/fullsize/2.jpg" class="portfolio-box">
-                        <img src="img/portfolio/thumbnails/2.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Sites
-                                </div>
-                                <div class="project-name">
-                                    Desenvolvimento e suporte a sites.
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="img/portfolio/fullsize/3.jpg" class="portfolio-box">
-                        <img src="img/portfolio/thumbnails/3.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Material Grafico
-                                </div>
-                                <div class="project-name">
-                                    Para despertar o interesse de compra do consumidor, uma boa mídia impressa ou online faz toda a diferença.
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="img/portfolio/fullsize/4.jpg" class="portfolio-box">
-                        <img src="img/portfolio/thumbnails/4.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    ERP Kolus
-                                </div>
-                                <div class="project-name">
-                                    Tenha um suporte de qualidade para melhor gerênciar seu negócio.
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="img/portfolio/fullsize/5.jpg" class="portfolio-box">
-                        <img src="img/portfolio/thumbnails/5.jpg" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Implementação e Suporte a redes
-                                </div>
-                                <div class="project-name">
-                                    Uma infraestrutura de redes e servidores deve ter segurança, confiabilidade e performance. 
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="img/portfolio/fullsize/6.jpg" class="portfolio-box">
-                        <img src="img/portfolio/thumbnails/6.jpg" class="img-responsive" alt="" style="height: 300px">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Blindagem
-                                </div>
-                                <div class="project-name">
-                                    Oferecemos soluções que cobrem todo o ciclo de segurança para blogs, lojas virtuais, sistemas e redes internas.
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
+
             </div>
         </div>
     </section>
