@@ -33,7 +33,15 @@
 			</div>
 		</form>
 		<ul class="nav menu">
-			<li class="active"><a href="{{ route('header.index') }}"><svg class="glyph stroked dashboard-dial"><use xlink:href="#stroked-dashboard-dial"></use></svg>Topo</a></li>
-			
+			<li class="active"><a href="{{ route('header.index') }}">
+				<span class="glyphicon glyphicon-chevron-up"></span>Topo</a></li>
+			<li class="active"><a href="{{ route('contato.index') }}">
+				<span class="glyphicon glyphicon-phone-alt"></span>Contato</a></li>
+			<li class="active"><a href="{{ route('apresentacao.index') }}">
+				<span class="glyphicon glyphicon-asterisk"></span>Apresentação</a></li>
+			<li class="active"><a href="{{ route('servico.index') }}">
+				<span class="glyphicon glyphicon-th-large"></span>Serviços</a></li>
+			<li class="active"><a href="{{ route('servicosimg.index') }}">
+				<span class="glyphicon glyphicon-th"></span>Serviços</a></li>
 		</ul>
 	</div><!--/.sidebar-->
