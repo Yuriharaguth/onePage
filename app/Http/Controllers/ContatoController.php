@@ -11,11 +11,14 @@ use App\Contato;
 
 class ContatoController extends Controller {
 
+    public function __construct(){
+        $this->middleware('auth');
+    }
+    
     public function index() {
         $contato = Contato::all();
         return view('contato.index', compact('contato'));
     }
-
 
     public function edit(Contato $contato) {
         return view('contato.edit', compact('contato'));

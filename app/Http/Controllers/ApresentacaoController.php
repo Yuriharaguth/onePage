@@ -12,6 +12,10 @@ use App\Apresentacao;
 class ApresentacaoController extends Controller
 {
 
+    public function __construct(){
+        $this->middleware('auth');
+    }
+    
     public function index() {
         $apresentacao = Apresentacao::all();
         return view('apresentacao.index', compact('apresentacao'));

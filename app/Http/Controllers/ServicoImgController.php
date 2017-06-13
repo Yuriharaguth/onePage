@@ -11,6 +11,9 @@ use App\ServicoImg;
 
 class ServicoImgController extends Controller
 {
+    public function __construct(){
+        $this->middleware('auth');
+    }
     
     public function index() {
         $servicoImg = ServicoImg::all();

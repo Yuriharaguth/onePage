@@ -11,6 +11,10 @@ use App\Servico;
 
 class ServicoController extends Controller {
 
+    public function __construct(){
+        $this->middleware('auth');
+    }
+
     public function index() {
         $servicos = Servico::all();
         return view('servico.index', compact('servicos'));
